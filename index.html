@@ -32,13 +32,14 @@
 
         .creditos {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             color: white;
-            font-size: 0.9rem;
-            opacity: 0.7;
+            font-size: 1rem;
+            opacity: 0.8;
             text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
         }
 
         .creditos:hover {
@@ -55,6 +56,17 @@
             0% {transform: scale(1);}
             50% {transform: scale(1.1);}
             100% {transform: scale(1);}
+        }
+
+        /* Responsividade para texto central */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            .creditos {
+                font-size: 0.9rem;
+                bottom: 15px;
+            }
         }
     </style>
 </head>
